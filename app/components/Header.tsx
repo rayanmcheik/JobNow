@@ -52,7 +52,7 @@ export default function Header() {
                 <div className="flex items-center bg-gray-100 px-3 py-2 rounded-lg flex-1 m-2">
                   <img src="/locationblack.svg" alt="location" className="w-5 h-5 mr-2" />
                   <select className="bg-transparent outline-none w-full text-sm">
-                    <option value="">Select Location</option>
+                    <option value="">Location</option>
                     <option value="beirut">Beirut</option>
                     <option value="tripoli">Tripoli</option>
                     <option value="Zahle">Zahle</option>
