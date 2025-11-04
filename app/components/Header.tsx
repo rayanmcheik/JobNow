@@ -1,31 +1,26 @@
 'use client';
+
 import React from 'react';
+import Link from 'next/link';
+import { FaSearch, FaChartBar, FaShieldAlt } from 'react-icons/fa';
+import { GiProtectionGlasses } from 'react-icons/gi';
 
 export default function Header() {
   return (
-    <nav className="w-full shadow-md h-auto ">
-      <div className="flex flex-row w-full max-w-[1200px] mx-auto h-full bg-neutral-200">
+    <nav className="w-full h-auto shadow-md ">
+      <div className="flex flex-row w-full h-full mx-auto bg-neutral-200">
 
-        <div className='w-[70%] flex flex-col'>
-          <div className="flex justify-between px-6 w-full h-auto pt-4">
+        <div className='w-[50%] flex flex-col'>
+          <div className="flex justify-between w-full h-auto px-6 pt-4">
 
             <div className="flex items-center">
-              <h1 className="text-3xl font-extrabold flex items-center font-sans">
-                <span className="text-black">Job</span>
-                <span className="text-[#00ff9d] flex items-center">
-                  N
-                  <img
-                    src="/search.svg"
-                    alt="O"
-                    className="w-7 h-6 mx-0 inline-block align-middle pt-1"
-                  />
-                  w
-                </span>
-              </h1>
+              <Link href="/">
+                <img src="logo.webp" alt="Logo" className="w-auto h-7" />
+              </Link>
             </div>
 
 
-            <nav className="hidden md:flex items-center space-x-10 text-black text-sm font-normal">
+            <nav className="items-center hidden space-x-10 text-sm font-bold text-black md:flex">
               <a href="#" className="hover:text-black ">Home</a>
               <a href="#" className="hover:text-black">Job</a>
               <a href="#" className="hover:text-black">About Us</a>
@@ -33,32 +28,32 @@ export default function Header() {
             </nav>
             <div></div>
           </div>
-          <div className='w-full h-full px-1 flex flex-col justify-center items-center'>
-            <h1 className='text-4xl font-bold pb-7'>Search, Find, & Apply</h1>
-            <div className='text-left  w-lvh pl-5 '>
-              <p className='px-10 text-sm font-semibold'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lacus non orci euismod vestibulum vitae ut ex. Quisque ut arcu at lectus tristique auctor sit amet at turpis.
+          <div className='flex flex-col items-start justify-center w-full h-full px-1 pl-4 pr-4'>
+            <h1 className='text-4xl font-bold pb-7 font-momo'>Search, Find, & Apply</h1>
+            <div className='text-left w-lvh'>
+              <p className='font-sans'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lacus non orci euismod vestibulum vitae ut ex. Quisque ut arcu at lectus tristique auctor sit amet at turpis.
               </p>
             </div>
-            <div className='w-lvh pl-5  pt-5 flex justify-center '>
-              <div className='bg-white w-lvh h-auto rounded-2xl flex flex-row justify-between gap-3 mx-5'>
-                <div className="flex items-center bg-gray-100 px-3 py-2 rounded-lg flex-1 mt-2 mb-2 ml-2 mr-2">
+            <div className='flex w-full pt-5 '>
+              <div className='flex flex-row justify-between w-full h-auto gap-3 pl-0 bg-white rounded-2xl'>
+                <div className="flex items-center flex-1 px-3 py-2 mt-2 mb-2 ml-2 mr-2 bg-gray-100 rounded-lg">
                   <img src="/searchblack.svg" alt="search" className="w-5 h-5 mr-2" />
                   <input
                     type="text"
                     placeholder="Search..."
-                    className="bg-transparent outline-none w-full text-sm"
+                    className="w-full text-sm bg-transparent outline-none"
                   />
                 </div>
-                <div className="flex items-center bg-gray-100 px-3 py-2 rounded-lg flex-1 m-2">
+                <div className="flex items-center flex-1 px-3 py-2 m-2 bg-gray-100 rounded-lg">
                   <img src="/locationblack.svg" alt="location" className="w-5 h-5 mr-2" />
-                  <select className="bg-transparent outline-none w-full text-sm">
+                  <select className="w-full text-sm bg-transparent outline-none">
                     <option value="">Location</option>
                     <option value="beirut">Beirut</option>
                     <option value="tripoli">Tripoli</option>
                     <option value="Zahle">Zahle</option>
                   </select>
                 </div>
-                <button className="bg-[#1bcf8a] m-2 text-white px-6 py-2 rounded-lg font-medium hover:bg-green-600 transition-colors duration-300">
+                <button className="px-6 py-2 m-2 font-medium text-white transition-colors duration-300 rounded-lg bg-oceanColor hover:text-black">
                   Search
                 </button>
               </div>
@@ -66,14 +61,14 @@ export default function Header() {
           </div>
         </div>
 
-        <div className="w-[40%] h-80 mr-1  bg-[#1bcf8a] rounded-bl-3xl flex flex-col items-center justify-start px-4">
-          <div className="flex flex-row justify-center space-x-2 w-full mt-5 items-center">
+        <div className="flex flex-col items-center justify-start w-[50%] px-4 mr-1 h-80 bg-oceanColor rounded-bl-3xl">
+          <div className="flex flex-row items-center justify-center w-full mt-5 space-x-2">
 
-            <button className="text-white font-medium hover:text-black px-3 py-2 text-sm rounded-md transition-all duration-300">
+            <button className="px-3 py-2 text-sm font-medium text-white transition-all duration-300 rounded-md hover:text-black">
               Sign In
             </button>
 
-            <button className="group flex items-center gap-2 border bg-white text-black border-gray-300 px-3 py-2 rounded-md font-medium hover:bg-[#1bcf8a] hover:text-white transition-all duration-300">
+            <button className="flex items-center gap-2 px-3 py-2 font-medium text-black transition-all duration-300 bg-white border border-gray-300 rounded-md group hover:bg-oceanColor hover:text-white">
               <img
                 src="/createAccount.svg"
                 alt="O"
@@ -82,14 +77,32 @@ export default function Header() {
               <img
                 src="/createAccountWhite.svg"
                 alt="O hover"
-                className="w-5 h-5 hidden group-hover:inline-block"
+                className="hidden w-5 h-5 group-hover:inline-block"
               />
               <span className="text-sm">Create Account</span>
             </button>
 
           </div>
 
-          <div className="flex-1 w-full"></div>
+          <div className="flex flex-col justify-between w-full h-full pl-4 pr-4">
+            <div></div>
+            <div className='flex w-full pl-10'>
+              <div className="p-3 bg-white rounded-lg shadow-md w-14 h-14 -rotate-6">
+                <img src="/SearchFolder.svg" alt="searchfolder" className='inline'/>
+              </div>
+            </div>
+            <div className='z-20 flex items-end justify-end w-full pr-10'>
+              <div className="p-4 mx-0 bg-white rounded-lg shadow-md w-14 h-14 rotate-6">
+                <FaChartBar className="text-3xl text-oceanColor" />
+              </div>
+            </div>
+            <div className='flex w-full pl-10'>
+              <div className="p-3 mx-0 bg-white rounded-lg shadow-md w-14 h-14 -rotate-6">
+                <img src="/protection.svg" alt="" />
+              </div>
+            </div>
+            <div></div>
+          </div>
         </div>
 
       </div>
