@@ -11,6 +11,7 @@ module.exports = {
       },
       fontFamily: {
         momo: ["var(--font-momoTrust)", "sans-serif"],
+        poppins: ['"Poppins"', "sans-serif"],
       },
     },
   },
