@@ -23,10 +23,10 @@ export default function Header() {
             </Link>
 
             <nav className="items-center hidden space-x-10 text-[16px] font-bold text-black md:flex">
-              <a href="#" className="hover:text-black">Home</a>
-              <a href="#" className="hover:text-black">Job</a>
-              <a href="#" className="hover:text-black">About Us</a>
-              <a href="#" className="hover:text-black">Contact</a>
+              <a href="#" className="hover:text-oceanColor">Home</a>
+              <a href="#" className="hover:text-oceanColor">Job</a>
+              <a href="#" className="hover:text-oceanColor">About Us</a>
+              <a href="#" className="hover:text-oceanColor">Contact</a>
             </nav>
 
             <button
@@ -41,14 +41,14 @@ export default function Header() {
 
           {menuOpen && (
             <div className='flex flex-row justify-between w-full h-auto mb-10'>
-              <div className="flex flex-col items-start w-full px-6 py-3 space-y-3 bg-neutral-200 md:hidden">
-                <a href="#" className="text-[16px] font-bold text-black">Home</a>
-                <a href="#" className="text-[16px] font-bold text-black">Job</a>
-                <a href="#" className="text-[16px] font-bold text-black">About Us</a>
-                <a href="#" className="text-[16px] font-bold text-black">Contact</a>
+              <div className="flex flex-col items-start w-full px-6 py-3 space-y-3 bg-neutral-200 md:hidden text-black">
+                <a href="#" className="text-[16px] font-bold hover:text-oceanColor">Home</a>
+                <a href="#" className="text-[16px] font-bold hover:text-oceanColor">Job</a>
+                <a href="#" className="text-[16px] font-bold hover:text-oceanColor">About Us</a>
+                <a href="#" className="text-[16px] font-bold hover:text-oceanColor">Contact</a>
               </div>
               <div className="flex flex-col items-center justify-center w-full bg-neutral-200 pr-5 md:hidden">
-                <button className="px-3 py-2 pb-10 text-sm font-bold hover:text-black transition-all duration-300 rounded-md text-black">
+                <button className="px-3 py-2 pb-10 text-sm font-bold hover:text-oceanColor transition-all duration-300 rounded-md text-black">
                   Sign In
                 </button>
                 <button className="flex items-center gap-2 px-3 py-2 font-medium text-black transition-all duration-300  border border-gray-300 rounded-md group hover:bg-oceanColor hover:text-white">
@@ -65,9 +65,10 @@ export default function Header() {
           )}
 
           <div className="flex flex-col items-start justify-center w-full h-full px-6 pt-16 md:pt-32 md:bg-neutral-200 bg-white">
-            <h1 className="text-4xl md:text-6xl font-bold pb-10 md:pb-14 font-momo">
+            <h1 className="text-5xl md:text-5xl font-bold pb-10 md:pb-14 font-momo">
               Search, Find, & Apply
             </h1>
+
             <p className="font-poppins text-left text-lg md:text-2xl">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lacus non orci
               euismod vestibulum vitae ut ex.
@@ -98,7 +99,7 @@ export default function Header() {
           </div>
         </div>
 
-        <div className="relative md:flex flex-col items-end justify-start md:w-1/2 w-full px-0 md:px-4 h-80">
+        <div className="relative md:flex flex-col items-end justify-start md:w-1/2 w-full px-0 md:px-4 h-80 md:bg-transparent bg-oceanColor md:pb-9 pb-20 md:h-auto">
           <div className="hidden md:flex flex-row items-center justify-end w-full mt-5 space-x-2 pt-10">
             <button className="px-3 py-2 text-sm font-bold text-white transition-all duration-300 rounded-md hover:text-black">
               Sign In
@@ -114,23 +115,27 @@ export default function Header() {
             </button>
           </div>
 
-          <div className="flex flex-col justify-between w-full md:w-full h-auto pl-0 md:pl-4 md:pr-4 md:bg-transparent bg-oceanColor">
-            <div className="flex items-center justify-center w-full pt-12 md:pt-20 md:pr-16 pr-52 md:pb-11 pb-0">
-              <div className="p-3 bg-white rounded-lg shadow-md md:w-20 md:h-20 w-14 h-14 -rotate-6">
-                <img src="/SearchFolder.svg" alt="searchfolder" className="inline" />
-              </div>
-            </div>
-            <div className="flex justify-center items-center md:items-end md:justify-end w-full md:pt-20 pt-0 pl-24 md:pl-10 ml-12 md:pb-11 pb-0 ">
-              <div className="p-3 mx-0 bg-white rounded-lg shadow-md md:w-20 md:h-20 w-14 h-14 rotate-12">
-                <img src="/chatbar.svg" alt="" />
-              </div>
-            </div>
-            <div className="flex items-end justify-center w-full pt-10 md:pt-16 pr-40 pb-14">
-              <div className="p-3 mx-0 bg-white rounded-lg shadow-md md:w-20 md:h-20 w-14 h-14 -rotate-6">
-                <img src="/protection.svg" alt="" />
-              </div>
+          <div className="flex items-center justify-center w-full pt-12 md:pt-20 md:pr-16 pr-52 md:pb-11 pb-0 ">
+            <div className="p-3 bg-white hover:bg-oceanColor hover:border-2 hover:border-white rounded-lg shadow-md md:w-20 md:h-20 w-14 h-14 -rotate-6 relative group">
+              <img src="/SearchFolder.svg" alt="searchfolder" className="inline group-hover:hidden" />
+              <img src="/SearchFolderWhite.svg" alt="searchfolder hover" className="hidden group-hover:inline" />
             </div>
           </div>
+
+          <div className="flex justify-center items-center md:items-end md:justify-end w-full md:pt-20 pt-0 pl-24 md:pl-10 ml-12 md:pb-11 pb-0">
+            <div className="p-3 mx-0 bg-white hover:bg-oceanColor hover:border-2 hover:border-white rounded-lg shadow-md md:w-20 md:h-20 w-14 h-14 rotate-12 relative group">
+              <img src="/chatbar.svg" alt="chatbar" className="inline group-hover:hidden" />
+              <img src="/chatbarwhite.svg" alt="chatbar hover" className="hidden group-hover:inline" />
+            </div>
+          </div>
+
+          <div className="flex items-end justify-center w-full pt-10 md:pt-16 pr-40 pb-40">
+            <div className="p-3 mx-0 bg-white hover:bg-oceanColor hover:border-2 hover:border-white rounded-lg shadow-md md:w-20 md:h-20 w-14 h-14 -rotate-6 relative group">
+              <img src="/protection.svg" alt="protection" className="inline group-hover:hidden" />
+              <img src="/protectionwhite.svg" alt="protection hover" className="hidden group-hover:inline" />
+            </div>
+          </div>
+
         </div>
       </div>
     </nav>
