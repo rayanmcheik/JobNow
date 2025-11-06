@@ -19,7 +19,7 @@ const Buttonocean: React.FC<ButtonoceanProps> = ({
 }) => {
   return (
     <a href={src} target="_blank" rel="buttons">
-      <button  className={`md:text-2xl text-lg w-full md:py-3 px-5 cursor-pointer font-normal transition-colors duration-300 border-2 border-oceanColor rounded-lg shadow-lg ${color} ${hovercolor} ${bgcolor} ${bgcolorhover}`}>
+      <button  className={`md:text-xl md:h-auto md:w-40  sm:text-lg w-full md:py-3 px-5 cursor-pointer font-semibold transition-colors duration-300 border-2 border-oceanColor rounded-lg  ${color} ${hovercolor} ${bgcolor} ${bgcolorhover}`}>
         {Text}
       </button>
     </a>

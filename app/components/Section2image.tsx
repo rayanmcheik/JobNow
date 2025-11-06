@@ -7,7 +7,7 @@ const Section2image = () => {
             <div className='w-full h-auto pl-10 pr-5 px-0 md:pt-28 pt-5 pb-40 mx-auto max-w-[1200px] container'>
                 <div className='flex flex-col md:flex md:flex-row w-full md:justify-between md:gap-20  justify-center'>
                     <div className='md:w-[75%] '>
-                        <img src='engineering.jpg' className='w-full h-full object-fit rounded-md shadow-md' />
+                        <img src='engineering.jpg' className='w-full h-full object-cover rounded-md shadow-md' />
                     </div>
                     <div className='flex flex-col md:w-3/4'>
                         <div>
@@ -26,7 +26,7 @@ const Section2image = () => {
                             <div className="md:flex hidden md:w-full md:justify-start md:items-center md:pb-10">
                                 <Buttonocean
                                     Text="Learn More"
-                                    bgcolor="bg-white"
+                                    bgcolor="bg-transparent"
                                     bgcolorhover="hover:bg-oceanColor"
                                     color="text-oceanColor"
                                     hovercolor="hover:text-white"
@@ -39,7 +39,7 @@ const Section2image = () => {
                     <div className="md:hidden flex w-full justify-center items-center">
                         <Buttonocean
                             Text="Learn More"
-                            bgcolor="bg-white"
+                            bgcolor="bg-transparent"
                             bgcolorhover="hover:bg-oceanColor"
                             color="text-oceanColor"
                             hovercolor="hover:text-white"

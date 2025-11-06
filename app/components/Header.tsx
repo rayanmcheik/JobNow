@@ -40,22 +40,53 @@ export default function Header() {
           </div>
 
           {menuOpen && (
-            <div className='flex flex-row justify-between w-full h-auto mb-10'>
-              <div className="flex flex-col items-start w-full px-6 py-3 space-y-3 bg-neutral-200 md:hidden text-black">
-                <a href="#" className="text-[16px] font-bold hover:text-oceanColor">Home</a>
-                <a href="#" className="text-[16px] font-bold hover:text-oceanColor">Job</a>
-                <a href="#" className="text-[16px] font-bold hover:text-oceanColor">About Us</a>
-                <a href="#" className="text-[16px] font-bold hover:text-oceanColor">Contact</a>
+            <div className="fixed inset-0 z-50 flex flex-col  bg-neutral-200 md:hidden">
+              <div className="flex items-end justify-end px-6 py-4 ">
+                <button
+                  onClick={() => setMenuOpen(false)}
+                  className="text-5xl font-bold text-black hover:text-oceanColor transition-all duration-200"
+                >
+                  ×
+                </button>
               </div>
-              <div className="flex flex-col items-center justify-center w-full bg-neutral-200 pr-5 md:hidden">
-                <button className="px-3 py-2 pb-10 text-sm font-bold hover:text-oceanColor transition-all duration-300 rounded-md text-black">
+
+              <div className="flex flex-col items-center justify-start w-full px-6 py-6 space-y-5 text-black pb-0 mt-10">
+                {[
+                  { name: "Home", href: "/" },
+                  { name: "Job", href: "/" },
+                  { name: "About Us", href: "/" },
+                  { name: "Contact", href: "/" },
+                ].map((item) => (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    onClick={() => setMenuOpen(false)}
+                    className="text-lg font-semibold hover:text-oceanColor transition-all duration-200"
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+              <div className="flex flex-col items-center justify-center w-full px-5 pb-10 space-y-4 mt-10">
+                <button
+                  onClick={() => setMenuOpen(false)}
+                  className="px-4 py-2 text-sm font-bold text-black hover:text-oceanColor transition-all duration-300"
+                >
                   Sign In
                 </button>
-                <button className="flex items-center gap-2 px-3 py-2 font-medium text-black transition-all duration-300  border border-gray-300 rounded-md group hover:bg-oceanColor hover:text-white">
-                  <img src="/createAccount.svg" alt="O" className="w-5 h-5 group-hover:hidden" />
+
+                <button
+                  onClick={() => setMenuOpen(false)}
+                  className="flex items-center gap-2 px-4 py-2 font-medium text-black transition-all duration-300 border border-gray-400 rounded-md group hover:bg-oceanColor hover:text-white"
+                >
+                  <img
+                    src="/createAccount.svg"
+                    alt="icon"
+                    className="w-5 h-5 group-hover:hidden"
+                  />
                   <img
                     src="/createAccountWhite.svg"
-                    alt="O hover"
+                    alt="icon hover"
                     className="hidden w-5 h-5 group-hover:inline-block"
                   />
                   <span className="text-sm font-bold">Create Account</span>
@@ -64,7 +95,8 @@ export default function Header() {
             </div>
           )}
 
-          <div className="flex flex-col items-start justify-center w-full h-full px-6 pt-16 md:pt-28 md:bg-neutral-200 bg-white">
+
+          <div className="flex flex-col items-start justify-center w-full h-full px-6 pt-16 md:pt-44 md:bg-neutral-200 bg-white">
             <h1 className="text-5xl md:text-5xl font-bold pb-10 md:pb-14 font-momo">
               Search, Find, & Apply
             </h1>
@@ -74,7 +106,7 @@ export default function Header() {
               euismod vestibulum vitae ut ex.
             </p>
 
-            <div className="flex flex-row justify-between w-full h-auto md:gap-3 pt-10 pb-40 gap-1 md:pb-40 ">
+            <div className="flex flex-row justify-between w-full h-auto md:gap-3 pt-10 pb-40 gap-1 md:pb-40  ">
               <div className="flex items-center flex-1 px-1 md:px-3 py-2 bg-gray-100 rounded-lg mx-2 md:mx-0">
                 <img src="/searchblack.svg" alt="search" className="w-5 h-5 mr-2" />
                 <input
@@ -101,38 +133,35 @@ export default function Header() {
 
         <div className="relative md:flex flex-col items-end justify-start md:w-1/2 w-full px-0 md:px-4 h-80 md:bg-transparent bg-oceanColor md:pb-9 pb-20 md:h-auto">
           <div className="hidden md:flex flex-row items-center justify-end w-full mt-5 space-x-2 pt-10">
-            <button className="px-3 py-2 text-sm font-bold text-white transition-all duration-300 rounded-md hover:text-black">
+            <button className="px-3 py-2 text-xl font-bold text-white transition-all duration-300 rounded-md hover:text-black">
               Sign In
             </button>
             <button className="flex items-center gap-2 px-3 py-2 font-medium text-black transition-all duration-300 bg-white border border-gray-300 rounded-md group hover:bg-oceanColor hover:text-white">
-              <img src="/createAccount.svg" alt="O" className="w-5 h-5 group-hover:hidden" />
+              <img src="/createAccount.svg" alt="O" className="w-8 h-8 group-hover:hidden ml-4" />
               <img
                 src="/createAccountWhite.svg"
                 alt="O hover"
-                className="hidden w-5 h-5 group-hover:inline-block"
+                className="hidden w-6 h-6 group-hover:inline-block"
               />
-              <span className="text-sm font-bold">Create Account</span>
+              <span className="text-xl font-bold pr-4">Create Account</span>
             </button>
           </div>
 
-          <div className="md:absolute md:left-20 md:top-20 flex items-center justify-center w-full pt-12 md:pt-20 md:pr-16 pr-52 md:pb-11 pb-0 ">
-            <div className="p-3 bg-white hover:bg-oceanColor hover:border-2 hover:border-white rounded-lg shadow-md md:w-20 md:h-20 w-14 h-14 -rotate-6 relative group">
-              <img src="/SearchFolder.svg" alt="searchfolder" className="inline group-hover:hidden" />
-              <img src="/SearchFolderWhite.svg" alt="searchfolder hover" className="hidden group-hover:inline" />
+          <div className="md:absolute md:left-15 md:top-20 flex items-center justify-center w-full pt-12 md:pt-20 md:pr-16 pr-52 md:pb-11 pb-0 ">
+            <div className="p-3 bg-white hover:border-2 hover:border-white rounded-lg shadow-md md:w-20 md:h-20 w-14 h-14 -rotate-6 relative group">
+              <img src="/SearchFolder.svg" alt="searchfolder" className="inline" />
             </div>
           </div>
 
           <div className="md:absolute md:left-52 md:top-60 flex justify-center items-center  w-full md:pt-20 pt-0 pl-24 md:pl-10 ml-12 md:pb-11 pb-0">
-            <div className="p-3 mx-0 bg-white hover:bg-oceanColor hover:border-2 hover:border-white rounded-lg shadow-md md:w-20 md:h-20 w-14 h-14 rotate-12 relative group">
-              <img src="/chatbar.svg" alt="chatbar" className="inline group-hover:hidden" />
-              <img src="/chatbarwhite.svg" alt="chatbar hover" className="hidden group-hover:inline" />
+            <div className="p-3 mx-0 bg-white hover:border-2 hover:border-white rounded-lg shadow-md md:w-20 md:h-20 w-14 h-14 rotate-12 relative group">
+              <img src="/chatbar.svg" alt="chatbar" className="inline" />
             </div>
           </div>
 
-          <div className="md:absolute md:left-20 md:top-96 flex items-end justify-center w-full pt-10 md:pt-16 pr-40 pb-40">
-            <div className="p-3 mx-0 bg-white hover:bg-oceanColor hover:border-2 hover:border-white rounded-lg shadow-md md:w-20 md:h-20 w-14 h-14 -rotate-6 relative group">
-              <img src="/protection.svg" alt="protection" className="inline group-hover:hidden" />
-              <img src="/protectionwhite.svg" alt="protection hover" className="hidden group-hover:inline" />
+          <div className="md:absolute md:left-1 md:top-96 flex items-end justify-center w-full pt-10 md:pt-16 pr-40 pb-40">
+            <div className="p-3 mx-0 bg-white hover:border-2 hover:border-white rounded-lg shadow-md md:w-20 md:h-20 w-14 h-14 -rotate-6 relative group">
+              <img src="/protection.svg" alt="protection" className="inline" />
             </div>
           </div>
 
