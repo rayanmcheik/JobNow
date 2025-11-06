@@ -64,7 +64,7 @@ export default function Header() {
             </div>
           )}
 
-          <div className="flex flex-col items-start justify-center w-full h-full px-6 pt-16 md:pt-32 md:bg-neutral-200 bg-white">
+          <div className="flex flex-col items-start justify-center w-full h-full px-6 pt-16 md:pt-28 md:bg-neutral-200 bg-white">
             <h1 className="text-5xl md:text-5xl font-bold pb-10 md:pb-14 font-momo">
               Search, Find, & Apply
             </h1>
@@ -115,21 +115,21 @@ export default function Header() {
             </button>
           </div>
 
-          <div className="flex items-center justify-center w-full pt-12 md:pt-20 md:pr-16 pr-52 md:pb-11 pb-0 ">
+          <div className="md:absolute md:left-20 md:top-20 flex items-center justify-center w-full pt-12 md:pt-20 md:pr-16 pr-52 md:pb-11 pb-0 ">
             <div className="p-3 bg-white hover:bg-oceanColor hover:border-2 hover:border-white rounded-lg shadow-md md:w-20 md:h-20 w-14 h-14 -rotate-6 relative group">
               <img src="/SearchFolder.svg" alt="searchfolder" className="inline group-hover:hidden" />
               <img src="/SearchFolderWhite.svg" alt="searchfolder hover" className="hidden group-hover:inline" />
             </div>
           </div>
 
-          <div className="flex justify-center items-center md:items-end md:justify-end w-full md:pt-20 pt-0 pl-24 md:pl-10 ml-12 md:pb-11 pb-0">
+          <div className="md:absolute md:left-52 md:top-60 flex justify-center items-center  w-full md:pt-20 pt-0 pl-24 md:pl-10 ml-12 md:pb-11 pb-0">
             <div className="p-3 mx-0 bg-white hover:bg-oceanColor hover:border-2 hover:border-white rounded-lg shadow-md md:w-20 md:h-20 w-14 h-14 rotate-12 relative group">
               <img src="/chatbar.svg" alt="chatbar" className="inline group-hover:hidden" />
               <img src="/chatbarwhite.svg" alt="chatbar hover" className="hidden group-hover:inline" />
             </div>
           </div>
 
-          <div className="flex items-end justify-center w-full pt-10 md:pt-16 pr-40 pb-40">
+          <div className="md:absolute md:left-20 md:top-96 flex items-end justify-center w-full pt-10 md:pt-16 pr-40 pb-40">
             <div className="p-3 mx-0 bg-white hover:bg-oceanColor hover:border-2 hover:border-white rounded-lg shadow-md md:w-20 md:h-20 w-14 h-14 -rotate-6 relative group">
               <img src="/protection.svg" alt="protection" className="inline group-hover:hidden" />
               <img src="/protectionwhite.svg" alt="protection hover" className="hidden group-hover:inline" />
