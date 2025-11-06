@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-4 md:gap-10 justify-between">
         <div className="flex flex-col justify-center items-start">
           <img src='logo2.png' className='w-[85%] h-20 mb-4' />
-          <p className="mb-4  font-semibold space-y-2 text-gray-100">
+          <p className="mb-4 space-y-2 text-gray-100">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lacus non orci
             euismod vestibulum vitae ut ex.
           </p>
@@ -44,7 +44,6 @@ const Footer = () => {
             >
               <FaGoogle size={24} />
             </a>
-
             <a
               href="https://www.facebook.com"
               target="_blank"
@@ -53,7 +52,6 @@ const Footer = () => {
             >
               <FaFacebookF size={24} />
             </a>
-
             <a
               href="https://www.linkedin.com"
               target="_blank"
@@ -62,7 +60,6 @@ const Footer = () => {
             >
               <FaLinkedinIn size={24} />
             </a>
-
             <a
               href="https://www.twitter.com"
               target="_blank"
