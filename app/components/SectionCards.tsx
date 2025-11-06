@@ -24,9 +24,9 @@ const SectionCards = () => {
               <Buttonocean
                 Text="Learn More"
                 bgcolor="bg-white"
-                bgcolorhover="bg-oceanColor"
+                bgcolorhover="hover:bg-oceanColor"
                 color="text-oceanColor"
-                hovercolor="text-white"
+                hovercolor="hover:text-white"
                 src="/"
               />
             </div>
@@ -46,9 +46,9 @@ const SectionCards = () => {
               <Buttonocean
                 Text="Learn More"
                 bgcolor="bg-white"
-                bgcolorhover="bg-oceanColor"
+                bgcolorhover="hover:bg-oceanColor"
                 color="text-oceanColor"
-                hovercolor="text-white"
+                hovercolor="hover:text-white"
                 src="/"
               />
             </div>

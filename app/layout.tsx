@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import localFont from "next/font/local";
 import SectionCards from "./components/SectionCards";
-
+import Section2image from "./components/Section2image";
 
 const momoTrust = localFont({
   src: "../public/fonts/MomoTrustSans-VariableFont_wght.ttf",
@@ -25,6 +25,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Header />
         <main className="relative min-h-screen">
           <SectionCards></SectionCards>
+          <Section2image></Section2image>
         </main>
         <Footer />
       </body>
