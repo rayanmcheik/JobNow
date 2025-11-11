@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       colors: {
         oceanColor: "#00CC99",
+        oceanColor2: "#caf1e0",
       },
       fontFamily: {
         momo: ["var(--font-momoTrust)", "sans-serif"],

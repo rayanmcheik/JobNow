@@ -106,7 +106,7 @@ export default function Header() {
               euismod vestibulum vitae ut ex.
             </p>
 
-            <div className="flex flex-col w-full h-auto gap-1 pt-10 pb-0 pb-40 md:pb-10">
+            <div className="flex flex-col w-full h-auto gap-1 pt-10 pb-40 md:pb-10">
               <div className="flex flex-row justify-between w-full h-auto gap-2 pt-2 pb-2 pl-2 pr-2 space-x-0 bg-white rounded-lg md:gap-3 md:pb-4 md:pt-4 md:pr-4 md:pl-4">
                 <div className="flex items-center flex-1 px-1 py-2 mx-0 bg-gray-100 rounded-lg md:px-3 md:mx-0">
                   <img src="/searchblack.svg" alt="search" className="w-3 h-3 md:mr-2 md:h-5 md:w-5 " />
