@@ -67,7 +67,7 @@ const Section4Cards = () => {
                         <SwiperSlide>
                             <CardsSection4
                                 image="/ALpander.webp"
-                                title="Full Stact Developer"
+                                title="Full Stack Developer"
                                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lacus non orci
               euismod vestibulum vitae ut ex."
                                 companyName='Alpander'
