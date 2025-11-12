@@ -6,6 +6,7 @@ import localFont from "next/font/local";
 import SectionCards from "./components/SectionCards";
 import Section2image from "./components/Section2image";
 import Section3Cards from "./components/Section3Cards";
+import Section4Cards from "./components/Section4Cards";
 
 const momoTrust = localFont({
   src: "../public/fonts/MomoTrustSans-VariableFont_wght.ttf",
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <SectionCards></SectionCards>
           <Section2image></Section2image>
           <Section3Cards></Section3Cards>
+          <Section4Cards></Section4Cards>
         </main>
         <Footer />
       </body>

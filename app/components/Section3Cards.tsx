@@ -12,20 +12,29 @@ const Section3Cards = () => {
       <div className="w-full h-auto pl-7 px-0 md:pt-32 pb-20 mx-auto max-w-[1200px] container pt-20">
         <div className="flex flex-col">
           <div>
-            <h1 className="pb-10 text-4xl font-semibold text-center md:text-5xl md:pb-10 font-poppins">
+            <h1 className="text-2xl font-semibold text-center pb-7 md:text-5xl md:pb-10 font-poppins">
               Popular Job Categories
             </h1>
           </div>
           <div>
-            <p className="w-full pb-10 pl-20 pr-20 text-lg text-center text-gray-600 font-momo md:text-2xl">
+            <p className="w-full pb-10 pl-5 pr-5 text-xs text-center text-gray-600 md:pl-20 md:pr-20 font-momo md:text-2xl">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lacus non orci
               euismod vestibulum vitae ut ex.
             </p>
           </div>
           <Swiper
-            spaceBetween={1}
-            slidesPerView={4}        
+            spaceBetween={10}
+            slidesPerView={4}
             className="w-full px-5"
+            breakpoints={{
+              0: {
+                slidesPerView: 3,
+                spaceBetween:5,
+              },
+              768: {
+                slidesPerView: 4,
+              },
+            }}
           >
             <SwiperSlide>
               <CardsSection3
