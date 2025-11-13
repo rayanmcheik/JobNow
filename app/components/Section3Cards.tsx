@@ -27,12 +27,28 @@ const Section3Cards = () => {
             slidesPerView={4}
             className="w-full px-5"
             breakpoints={{
+
               0: {
-                slidesPerView: 3,
-                spaceBetween:5,
+                slidesPerView: 2,
+
+              },
+              370: {
+                slidesPerView: 2.4,
+              },
+              414: {
+                slidesPerView: 2.8,
               },
               768: {
-                slidesPerView: 4,
+                slidesPerView: 2.5,
+
+              },
+              1024: {
+                slidesPerView: 3.5,
+
+              },
+              1440: {
+                slidesPerView: 4.2,
+
               },
             }}
           >
