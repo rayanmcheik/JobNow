@@ -18,7 +18,7 @@ const CardSection4: React.FC<CardProps> = ({ image, title, description, companyN
                     <img
                         src={image}
                         alt={title}
-                        className="object-cover h-10 duration-300 rounded-full md:h-28 md:top-5 top-2"
+                        className="object-cover h-10 duration-300 rounded-full md:h-24 md:top-5 top-2"
                     />
 
                 </div>
@@ -41,8 +41,19 @@ const CardSection4: React.FC<CardProps> = ({ image, title, description, companyN
                         <h3 className='text-[10px] md:text-sm'> {jobcategorie}</h3>
                     </div>
                 </div>
-                <button className='pt-5 pb-10 text-sm md:text-2xl text-oceanColor'>Apply Now <img src="/rightarrow.svg" alt="arrow up" className="inline w-4 h-4 pt-0" /></button>
-            </div>
+                <button className="flex items-center gap-2 pt-5 pb-10 text-sm group md:text-xl text-oceanColor hover:text-black">
+                    Apply Now
+                    <img
+                        src="/rightarrow.svg"
+                        alt="arrow"
+                        className="w-4 h-4 transition-all duration-300 group-hover:hidden"
+                    />
+                    <img
+                        src="/rightarrowblack.svg"
+                        alt="arrow"
+                        className="hidden w-4 h-4 transition-all duration-300 group-hover:inline"
+                    />
+                </button> </div>
         </Link>
     );
 };

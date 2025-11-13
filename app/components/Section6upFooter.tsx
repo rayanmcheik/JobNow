@@ -14,7 +14,7 @@ const Section6upFooter = () => {
           </p>
         </div>
         <div>
-          <button className='px-5 pt-2 pb-2 text-sm text-white border-2 border-white rounded-lg md:text-xl'>Register Now</button>
+          <button className='px-5 pt-2 pb-2 text-sm text-white border-2 border-white rounded-lg md:text-xl hover:bg-oceanColor'>Register Now</button>
         </div>
       </div>
     </div>

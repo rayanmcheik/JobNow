@@ -11,7 +11,7 @@ interface CardProps {
 const CardsSection3: React.FC<CardProps> = ({ image, hoverImage, title, description }) => {
   return (
     <Link href="/" className="group">
-      <div className="flex flex-col items-start justify-around px-6 overflow-auto text-black transition-colors duration-300 bg-white h-28 w-28 md:h-64 md:w-64 rounded-3xl hover:bg-oceanColor">
+      <div className="flex flex-col items-start justify-around px-6 overflow-auto text-black transition-colors duration-300 bg-white pl-7 h-28 w-28 md:h-64 md:w-64 rounded-3xl hover:bg-oceanColor">
         <div className="relative w-full h-10 pt-2 md:pt-5 md:h-24">
           <img
             src={image}

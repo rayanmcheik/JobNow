@@ -4,7 +4,7 @@ import Buttonocean from './Buttonocean'
 const Section5feedback = () => {
     return (
         <div className='w-full h-auto bg-neutral-100'>
-            <div className='w-full h-auto pl-10 pr-5 px-0 md:pt-28 pt-5 pb-52 mx-auto max-w-[1200px] container'>
+            <div className='w-full h-auto pl-10 pr-5 px-0 md:pt-20 pt-5 pb-72 mx-auto max-w-[1200px] container'>
                 <div>
                     <h1 className="w-full pt-10 text-xl font-bold text-center md:text-4xl md:h-auto md:pb-5 font-momo md:pt-8 md:text-left">
                         People's Feedback about JobNow!
@@ -14,13 +14,13 @@ const Section5feedback = () => {
                     <div className='flex flex-col md:w-3/4'>
                         <div className='flex flex-col md:flex md:flex-col md:justify-between'>
                             <div>
-                                <p className="w-full pt-5 pb-5 text-xs text-center text-gray-600 md:pb-10 font-poppins md:text-2xl md:w-full md:text-left">
+                                <p className="w-full pt-5 pb-5 text-xs text-center text-gray-600 md:pb-10 font-poppins md:text-xl md:w-full md:text-left">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lacus non orci
                                     euismod vestibulum vitae ut ex.
                                 </p>
                             </div>
                             <div>
-                                <p className="w-full pt-5 pb-16 text-sm font-semibold text-center text-black font-momo md:text-2xl md:w-full md:text-left">
+                                <p className="w-full pt-5 pb-16 text-sm font-semibold text-center text-black font-momo md:text-xl md:w-full md:text-left">
                                     " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lacus non orci
                                     euismod vestibulum vitae ut ex.Lorem ipsum dolor sit amet."
                                 </p>
@@ -29,12 +29,12 @@ const Section5feedback = () => {
                         <img src='feedback.jpg' className='object-cover w-full h-full pt-3 shadow-md rounded-3xl' />
                     </div>
                             <div>
-                                <h1 className="w-full pt-8 text-sm font-bold text-center md:text-3xl md:h-auto md:pb-5 font-momo md:pt-8 md:text-left">
+                                <h1 className="w-full pt-8 text-sm font-bold text-center md:text-2xl md:h-auto md:pb-5 font-momo md:pt-8 md:text-left">
                                     Brown Garcia
                                 </h1>
                             </div>
                             <div>
-                                <p className="w-full pt-2 pb-6 text-xs text-center text-gray-600 font-poppins md:text-xl md:w-full md:text-left">
+                                <p className="w-full pt-2 pb-6 text-xs text-center text-gray-600 font-poppins md:text-sm md:w-full md:text-left">
                                     Full Stack Developer in XReact Tech
                                 </p>
                             </div>

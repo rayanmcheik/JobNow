@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-4 md:gap-10 justify-between relative z-10">
          <Section6upFooter />
         <div className="flex flex-col items-start justify-center">
-          <img src='logo2.png' className='md:w-[85%] h-20 mb-4 w-[45%]' />
+          <img src='logo-footer.svg' className='md:w-[85%] h-20 mb-4 w-[45%]' />
           <p className="pb-10 mb-4 space-y-2 text-gray-100 md:pb-0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lacus non orci
             euismod vestibulum vitae ut ex.
@@ -29,12 +29,12 @@ const Footer = () => {
         <div className='hidden md:block md:w-auto md:ml-20'>
           <h3 className="mb-4 text-3xl font-bold text-left font-poppins">Pages</h3>
           <ul className="space-y-2 text-left text-gray-100">
-            <li><a href="#" className="hover:text-white"> &gt; Home</a></li>
-            <li><a href="#" className="hover:text-white"> &gt; Booking</a></li>
-            <li><a href="#" className="hover:text-white"> &gt; Facilities</a></li>
-            <li><a href="#" className="hover:text-white"> &gt; About Us</a></li>
-            <li><a href="#" className="hover:text-white"> &gt; Location</a></li>
-            <li><a href="#" className="hover:text-white"> &gt; Contact</a></li>
+            <li><a href="#" className="hover:text-black"> &gt; Home</a></li>
+            <li><a href="#" className="hover:text-black"> &gt; Booking</a></li>
+            <li><a href="#" className="hover:text-black"> &gt; Facilities</a></li>
+            <li><a href="#" className="hover:text-black"> &gt; About Us</a></li>
+            <li><a href="#" className="hover:text-black"> &gt; Location</a></li>
+            <li><a href="#" className="hover:text-black"> &gt; Contact</a></li>
           </ul>
         </div>
 
@@ -52,12 +52,12 @@ const Footer = () => {
           <div>
             <h3 className="mb-4 text-3xl font-bold text-center font-poppins">Pages</h3>
             <ul className="space-y-2 text-left text-gray-100">
-              <li><a href="#" className="hover:text-white"> &gt; Home</a></li>
-              <li><a href="#" className="hover:text-white"> &gt; Booking</a></li>
-              <li><a href="#" className="hover:text-white"> &gt; Facilities</a></li>
-              <li><a href="#" className="hover:text-white"> &gt; About Us</a></li>
-              <li><a href="#" className="hover:text-white"> &gt; Location</a></li>
-              <li><a href="#" className="hover:text-white"> &gt; Contact</a></li>
+              <li><a href="#" className="hover:text-black"> &gt; Home</a></li>
+              <li><a href="#" className="hover:text-black"> &gt; Booking</a></li>
+              <li><a href="#" className="hover:text-black"> &gt; Facilities</a></li>
+              <li><a href="#" className="hover:text-black"> &gt; About Us</a></li>
+              <li><a href="#" className="hover:text-black"> &gt; Location</a></li>
+              <li><a href="#" className="hover:text-black"> &gt; Contact</a></li>
             </ul>
           </div>
         </div>
@@ -65,10 +65,10 @@ const Footer = () => {
         <div>
           <h3 className="pt-10 mb-4 text-3xl font-bold font-poppins md:pt-0">Contact Us</h3>
           <div className="flex space-x-4 text-gray-100">
-            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="hover:text-white"><FaGoogle size={24} /></a>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-white"><FaFacebookF size={24} /></a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white"><FaLinkedinIn size={24} /></a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-white"><FaTwitter size={24} /></a>
+            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="hover:text-red-600"><FaGoogle size={24} /></a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-700"><FaFacebookF size={24} /></a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600"><FaLinkedinIn size={24} /></a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-black"><FaTwitter size={24} /></a>
           </div>
         </div>
       </div>
