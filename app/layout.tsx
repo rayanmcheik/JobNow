@@ -8,6 +8,7 @@ import Section2image from "./components/Section2image";
 import Section3Cards from "./components/Section3Cards";
 import Section4Cards from "./components/Section4Cards";
 import Section5feedback from "./components/Section5feedback";
+import Section6upFooter from "./components/Section6upFooter";
 
 
 const momoTrust = localFont({
@@ -33,8 +34,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <Section3Cards></Section3Cards>
           <Section4Cards></Section4Cards>
           <Section5feedback></Section5feedback>
+          
         </main>
-        <Footer />
+        <Footer ></Footer>
       </body>
     </html>
   );
