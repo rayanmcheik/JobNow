@@ -12,7 +12,7 @@ interface CardProps {
 
 const CardSection4: React.FC<CardProps> = ({ image, title, description, companyName, location, jobcategorie, }) => {
     return (
-        <Link href="/" className="group">
+        <Link href="/" className="">
             <div className="flex flex-col items-start justify-around md:px-10 md:pt-8 pt-3 px-5 overflow-auto text-black transition-colors duration-300 bg-white h-full w-[250px] md:h-full md:w-[400px] rounded-3xl md:pl-8 pl-5">
                 <div className="relative w-full h-10 pt-2 md:h-28">
                     <img
@@ -41,7 +41,7 @@ const CardSection4: React.FC<CardProps> = ({ image, title, description, companyN
                         <h3 className='text-[10px] md:text-sm'> {jobcategorie}</h3>
                     </div>
                 </div>
-                <button className="flex items-center gap-2 pt-5 pb-10 text-sm group md:text-xl text-oceanColor hover:text-black">
+                <button className="flex items-center justify-center gap-2 px-6 py-3 text-sm transition-all duration-300 group md:text-xl text-oceanColor hover:text-black rounded-xl">
                     Apply Now
                     <img
                         src="/rightarrow.svg"
@@ -53,7 +53,8 @@ const CardSection4: React.FC<CardProps> = ({ image, title, description, companyN
                         alt="arrow"
                         className="hidden w-4 h-4 transition-all duration-300 group-hover:inline"
                     />
-                </button> </div>
+                </button>
+            </div>
         </Link>
     );
 };
