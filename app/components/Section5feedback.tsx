@@ -64,7 +64,7 @@ const Section5feedback = () => {
             <p className="w-full pt-5 pb-16 text-sm font-semibold text-center text-black font-momo md:text-xl md:w-full md:text-left">
               {current.quote}
             </p>
-            <div className="flex md:hidden w-full h-[300px] pl-5 pr-20 text-center justify-center items-center">
+            <div className="flex md:hidden w-full h-[300px] text-center justify-center items-center">
               <img
                 src={current.image}
                 className="object-cover w-[350px]  h-full pt-3 transition-all duration-700 shadow-md rounded-3xl"
