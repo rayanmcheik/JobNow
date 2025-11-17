@@ -48,14 +48,20 @@ const Section4Cards = () => {
                                 slidesPerView: 1.8,
 
                             },
+                            920: {
+                                slidesPerView: 2.2,
+                            },
                             1024: {
                                 slidesPerView: 2.2,
 
                             },
                             1440: {
-                                slidesPerView: 2.6,
+                                slidesPerView: 2.8,
 
                             },
+                            1462: {
+                                slidesPerView: 2.6,
+                            }
                             
                         }}
                     >

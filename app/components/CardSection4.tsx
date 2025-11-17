@@ -41,7 +41,7 @@ const CardSection4: React.FC<CardProps> = ({ image, title, description, companyN
                         <h3 className='text-[10px] md:text-sm'> {jobcategorie}</h3>
                     </div>
                 </div>
-                <button className="flex items-center justify-center gap-2 px-6 py-3 text-sm transition-all duration-300 group md:text-xl text-oceanColor hover:text-black rounded-xl">
+                <button className="flex items-center justify-center gap-2 px-6 py-3 text-sm transition-all duration-300 group md:text-xl text-oceanColor hover:text-black rounded-xl pl-0 font-bold pb-6">
                     Apply Now
                     <img
                         src="/rightarrow.svg"

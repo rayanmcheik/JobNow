@@ -58,16 +58,16 @@ const Section5feedback = () => {
 
         <div className="flex flex-col justify-center w-full md:flex md:flex-row md:justify-between md:gap-5">
           <div className="flex flex-col transition-all duration-700 ease-in-out md:w-3/4">
-            <p className="w-full pt-5 pb-5 text-xs text-center text-gray-600 md:pb-10 font-poppins md:text-xl md:w-full md:text-left">
+            <p className="w-full pt-5 pb-5 text-xs text-center text-gray-600 md:pb-8 font-poppins md:text-xl md:w-full md:text-left">
               {current.description}
             </p>
-            <p className="w-full pt-5 pb-16 text-sm font-semibold text-center text-black font-momo md:text-xl md:w-full md:text-left">
+            <p className="w-full pt-5 pb-10 text-sm font-semibold text-center text-black font-momo md:text-xl md:w-full md:text-left">
               {current.quote}
             </p>
             <div className="flex md:hidden w-full h-[300px] text-center justify-center items-center">
               <img
                 src={current.image}
-                className="object-cover w-[350px]  h-full pt-3 transition-all duration-700 shadow-md rounded-3xl"
+                className="object-cover w-[350px]  h-full pt-3 transition-all duration-700 rounded-3xl"
               />
             </div>
 
@@ -108,7 +108,7 @@ const Section5feedback = () => {
           <div className="hidden md:flex md:w-[68%] md:h-[550px] pl-16 relative">
             <img
               src={current.image}
-              className="object-cover w-full h-full pt-3 transition-all duration-700 shadow-md rounded-3xl"
+              className="object-cover w-full h-full pt-3 transition-all duration-700 rounded-3xl"
             />
           </div>
         </div>

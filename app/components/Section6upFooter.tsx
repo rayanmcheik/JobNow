@@ -2,9 +2,9 @@ import React from 'react'
 
 const Section6upFooter = () => {
   return (
-    <div className="absolute -top-[28rem] bg-green-950  rounded-3xl ">
-      <div className="container flex flex-col items-center justify-center px-6 mx-auto text-center py-14 md:px-10">
-        <h1 className="text-2xl font-semibold text-white md:text-4xl">
+    <div className="absolute -top-[14rem] bg-green-950 rounded-3xl md:max-w-[1162px] max-w-[300px]">
+      <div className="container flex flex-col items-center justify-center px-6 mx-auto text-center py-14 ">
+        <h1 className="text-2xl font-semibold text-white md:text-4xl pt-10">
           Register your CV now!
         </h1>
         <div className='pl-2 pr-2 md:pl-16 md:pr-16'>
