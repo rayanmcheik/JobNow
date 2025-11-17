@@ -156,7 +156,7 @@ export default function Header() {
             </div>
           </div>
 
-          <div className="flex items-center justify-center w-full pt-0 pb-0 pl-24 ml-12 md:absolute md:left-52 md:top-60 md:pt-20 md:pl-10 md:pb-11 zoom-adjust-left zoom-150-fix">
+          <div className="flex items-center justify-center w-full pt-0 pb-0 pl-24 ml-12 md:absolute md:left-52 md:top-60 md:pt-20 md:pl-2 md:pb-11 zoom-adjust-left zoom-150-fix">
             <div className="relative p-3 mx-0 bg-white rounded-lg shadow-md md:w-20 md:h-20 w-14 h-14 rotate-12 group">
               <img src="/chatbar.svg" alt="chatbar" className="inline" />
             </div>
