@@ -4,13 +4,13 @@ import Section6upFooter from './Section6upFooter';
 
 const Footer = () => {
   return (
-    <footer className="relative w-full md:pr-5 py-10 text-white bg-oceanColor">
-      <div className="w-full h-auto pl-10 pr-5 px-0 md:pt-20 pt-5 mx-auto max-w-[1200px] container ">
-        <div className='flex flex-col w-full h-auto sm:pr-10'>
-          <div className='w-full h-auto pr-16 '>
-            <Section6upFooter />
+    <footer className="relative w-full md:pr-5 py-10 text-white bg-oceanColor pl-10 pr-5 px-0">
+      <div className="w-full h-auto pr-5 md:pt-20 pt-5 mx-auto max-w-[1200px] container relative ">
+        <div className='flex flex-col w-full h-auto '>
+          <div className='w-full h-auto'>
+            <Section6upFooter></Section6upFooter>
           </div>
-          <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-20 pt-28 pb-10">
+          <div className="mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-20 pt-28 pb-10 pr-16 md:pr-5">
             <div className="flex flex-col items-start">
               <img src="logo-footer.svg" className="w-[45%] md:w-[85%] h-20 mb-4" />
               <p className="text-gray-100">
