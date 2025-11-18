@@ -12,7 +12,7 @@ const Footer = () => {
           </div>
           <div className="grid grid-cols-1 gap-12 pb-10 pr-16 mx-auto md:grid-cols-4 md:gap-20 pt-28 md:pr-5">
             <div className="flex flex-col items-start">
-              <img src="logo-footer.svg" className="w-[45%] md:w-[85%] h-20 mb-4" />
+              <img src="logo-footer.svg" className="w-[45%] md:w-[85%] h-20 mb-4 pt-10" />
               <p className="text-gray-100">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lacus non orci
                 euismod vestibulum vitae ut ex.
@@ -67,11 +67,11 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="items-end justify-end w-auto text-right ">
-              <div className='w-auto px-5 text-right '>
+            <div className="items-start justify-start w-auto text-left md:items-end md:text-right md:justify-end">
+              <div className='w-auto text-left md:px-5 md:text-right'>
               <h3 className="mb-4 text-3xl font-bold font-poppins">Contact Us</h3>
 
-              <div className="flex space-x-4 text-gray-100 px-9">
+              <div className="flex px-0 space-x-4 text-gray-100 md:px-9">
                 <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="hover:text-red-600"><FaGoogle size={24} /></a>
                 <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-700"><FaFacebookF size={24} /></a>
                 <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600"><FaLinkedinIn size={24} /></a>

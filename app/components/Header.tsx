@@ -162,7 +162,7 @@ export default function Header() {
             </div>
           </div>
 
-          <div className="flex items-end justify-center w-full pt-10 pb-40 pr-72 md:absolute md:left-1 md:top-96 md:pt-16 2xl:left-28">
+          <div className="flex items-end justify-center w-full pt-10 pb-40 pr-32 md:pr-72 md:absolute md:left-1 md:top-96 md:pt-16 2xl:left-28">
             <div className="relative p-3 mx-0 bg-white rounded-lg shadow-md md:w-20 md:h-20 w-14 h-14 -rotate-6 group">
               <img src="/protection.svg" alt="protection" className="inline" />
             </div>

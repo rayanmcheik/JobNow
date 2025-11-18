@@ -30,7 +30,7 @@ const SectionCards = () => {
               />
             </div>
           </div>
-          <div className='grid grid-cols-2 gap-3 pr-5 md:grid md:grid-cols-4 md:gap-5'>
+          <div className='grid grid-cols-2 gap-3 md:grid md:grid-cols-4 md:gap-5'>
             <CardsSection1 image='/register.svg' title='Register' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lacus non orci
               euismod vestibulum vitae ut ex.'></CardsSection1>
             <CardsSection1 image='/createResume.svg' title='Create a resume ' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lacus non orci

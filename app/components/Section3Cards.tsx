@@ -25,7 +25,7 @@ const Section3Cards = () => {
           <Swiper
             spaceBetween={10}
             slidesPerView={4}
-            className="w-full px-5"
+            className="w-full"
             breakpoints={{
 
               0: {
