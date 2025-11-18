@@ -50,7 +50,7 @@ const Section5feedback = () => {
 
   return (
     <div className="w-full h-auto bg-neutral-100">
-      <div className="w-full h-auto pl-10 pr-5 px-0 md:pt-20 pt-5 pb-72 mx-auto max-w-[1200px] container">
+      <div className="w-full h-auto px-5 md:pt-20 pt-5 pb-72 mx-auto max-w-[1200px] container">
     
         <h1 className="w-full pt-10 text-xl font-bold text-center md:text-4xl md:h-auto md:pb-5 font-momo md:pt-8 md:text-left">
           People's Feedback about JobNow!

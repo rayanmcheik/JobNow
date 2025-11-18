@@ -9,7 +9,7 @@ import 'swiper/css';
 const Section3Cards = () => {
   return (
     <div className="w-full h-auto bg-oceanColor2">
-      <div className="w-full h-auto pl-7 px-0 md:pt-32 pb-20 mx-auto max-w-[1200px] container pt-20">
+      <div className="w-full h-auto px-5 md:pt-32 pb-20 mx-auto max-w-[1200px] container pt-20">
         <div className="flex flex-col">
           <div>
             <h1 className="text-2xl font-semibold text-center pb-7 md:text-5xl md:pb-10 font-poppins">

@@ -5,7 +5,7 @@ import Buttonocean from './Buttonocean'
 const SectionCards = () => {
   return (
     <div className='w-full h-auto bg-neutral-100'>
-      <div className='w-full h-auto pl-7 px-0 md:pt-48 pb-20 mx-auto max-w-[1200px] container pt-20'>
+      <div className='w-full h-auto px-5 md:pt-48 pb-20 mx-auto max-w-[1200px] container pt-20'>
         <div className='flex flex-col'>
           <div>
             <h1 className="pb-10 text-4xl font-bold md:text-4xl md:pb-14 font-momo">

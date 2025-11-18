@@ -4,13 +4,13 @@ import Section6upFooter from './Section6upFooter';
 
 const Footer = () => {
   return (
-    <footer className="relative w-full md:pr-5 py-10 text-white bg-oceanColor pl-10 pr-5 px-0">
-      <div className="w-full h-auto pr-5 md:pt-20 pt-5 mx-auto max-w-[1200px] container relative ">
+    <footer className="relative w-full py-10 text-white bg-oceanColor">
+      <div className="w-full h-auto md:pt-20 pt-5 mx-auto max-w-[1200px] container relative px-5">
         <div className='flex flex-col w-full h-auto '>
           <div className='w-full h-auto'>
             <Section6upFooter></Section6upFooter>
           </div>
-          <div className="mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-20 pt-28 pb-10 pr-16 md:pr-5">
+          <div className="grid grid-cols-1 gap-12 pb-10 pr-16 mx-auto md:grid-cols-4 md:gap-20 pt-28 md:pr-5">
             <div className="flex flex-col items-start">
               <img src="logo-footer.svg" className="w-[45%] md:w-[85%] h-20 mb-4" />
               <p className="text-gray-100">
@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
 
             <div className="hidden md:block ">
-              <div className='justify-center items-center flex flex-col'>
+              <div className='flex flex-col items-center justify-center'>
                 <h3 className="mb-4 text-3xl font-bold font-poppins">Pages</h3>
                 <ul className="space-y-2 text-gray-100">
                   <li><a href="#" className="hover:text-black">&gt; Home</a></li>
@@ -67,14 +67,16 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="md:w-[220px] text-left">
+            <div className="items-end justify-end w-auto text-right ">
+              <div className='w-auto px-5 text-right '>
               <h3 className="mb-4 text-3xl font-bold font-poppins">Contact Us</h3>
 
-              <div className="flex space-x-4 text-gray-100">
+              <div className="flex space-x-4 text-gray-100 px-9">
                 <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="hover:text-red-600"><FaGoogle size={24} /></a>
                 <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-700"><FaFacebookF size={24} /></a>
                 <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600"><FaLinkedinIn size={24} /></a>
                 <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-black"><FaTwitter size={24} /></a>
+              </div>
               </div>
             </div>
           </div>

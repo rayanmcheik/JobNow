@@ -4,7 +4,7 @@ import Buttonocean from './Buttonocean'
 const Section2image = () => {
     return (
         <div className='w-full h-auto bg-neutral-100'>
-            <div className='w-full h-auto pl-10 pr-5 px-0 md:pt-28 pt-5 pb-40 mx-auto max-w-[1200px] container'>
+            <div className='w-full h-auto px-5 md:pt-28 pt-5 pb-40 mx-auto max-w-[1200px] container'>
                 <div className='flex flex-col justify-center w-full md:flex md:flex-row md:justify-between md:gap-20'>
                     <div className='md:w-[55%] '>
                         <img src='engineering.jpg' className='object-cover w-full h-full rounded-md shadow-md' />

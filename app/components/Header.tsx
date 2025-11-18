@@ -14,7 +14,7 @@ export default function Header() {
         <div className="w-[45%] bg-oceanColor rounded-bl-3xl h-auto"></div>
       </div>
 
-      <div className="relative flex flex-col md:flex-row w-full h-auto mx-auto max-w-[1200px]">
+      <div className="relative flex flex-col md:flex-row w-full h-auto mx-auto max-w-[1200px] ">
         <div className="flex flex-col w-full md:w-1/2">
           <div className="flex justify-between w-full h-auto px-6 pt-8 pb-10 md:pt-16 bg-neutral-200 md:pb-0">
             <div className='flex md:hidden'></div>
@@ -135,7 +135,7 @@ export default function Header() {
         </div>
 
         <div className="relative flex-col items-end justify-start w-full px-0 pb-20 md:flex md:w-1/2 md:px-4 h-80 md:bg-transparent bg-oceanColor md:pb-9 md:h-auto 2xl:left-20">
-          <div className="flex-row items-center justify-end hidden w-full pt-10 mt-5 space-x-7 md:flex">
+          <div className="flex-row items-center justify-end hidden w-full pt-10 pr-16 mt-5 space-x-7 md:flex">
             <button className="px-3 py-2 text-[16px] font-bold text-white transition-all duration-300 rounded-md hover:text-black">
               Sign In
             </button>
@@ -150,19 +150,19 @@ export default function Header() {
             </button>
           </div>
 
-          <div className="flex items-center justify-center w-full pt-12 pb-0 md:absolute md:left-15 md:top-24 md:pt-20 md:pr-16 pr-52 md:pb-11 2xl:left-20">
+          <div className="flex items-center justify-center w-full pt-12 pb-0 pr-24 md:absolute md:left-15 md:top-24 md:pt-20 md:pr-16 md:pb-11 2xl:left-6">
             <div className="relative p-3 bg-white rounded-lg shadow-md md:w-20 md:h-20 w-14 h-14 -rotate-6 group">
               <img src="/SearchFolder.svg" alt="searchfolder" className="inline" />
             </div>
           </div>
 
-          <div className="flex items-center justify-center w-full pt-0 pb-0 pl-24 ml-12 md:absolute md:left-52 md:top-60 md:pt-20 md:pl-2 md:pb-11 zoom-adjust-left zoom-150-fix">
+          <div className="flex items-center justify-center w-full pt-0 pb-0 pl-24 ml-12 md:absolute md:left-[7.5rem] md:top-60 md:pt-20 md:pl-2 md:pb-11 zoom-adjust-left zoom-150-fix">
             <div className="relative p-3 mx-0 bg-white rounded-lg shadow-md md:w-20 md:h-20 w-14 h-14 rotate-12 group">
               <img src="/chatbar.svg" alt="chatbar" className="inline" />
             </div>
           </div>
 
-          <div className="flex items-end justify-center w-full pt-10 pb-40 pr-40 md:absolute md:left-1 md:top-96 md:pt-16 2xl:left-28">
+          <div className="flex items-end justify-center w-full pt-10 pb-40 pr-72 md:absolute md:left-1 md:top-96 md:pt-16 2xl:left-28">
             <div className="relative p-3 mx-0 bg-white rounded-lg shadow-md md:w-20 md:h-20 w-14 h-14 -rotate-6 group">
               <img src="/protection.svg" alt="protection" className="inline" />
             </div>
